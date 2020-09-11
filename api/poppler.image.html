@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>poppler.image module &#8212; python-poppler  documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="poppler.page module" href="poppler.page.html" />
+    <link rel="prev" title="poppler.font module" href="poppler.font.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="module-poppler.image">
+<span id="poppler-image-module"></span><h1>poppler.image module<a class="headerlink" href="#module-poppler.image" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="poppler.image.Image">
+<em class="property">class </em><code class="sig-prename descclassname">poppler.image.</code><code class="sig-name descname">Image</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">width</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">height</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">iformat</span><span class="o">=</span><span class="default_value">format_enum.invalid</span></em>, <em class="sig-param"><span class="n">data</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">poppler_object</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#poppler.image.Image" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt id="poppler.image.Image.Format">
+<code class="sig-name descname">Format</code><a class="headerlink" href="#poppler.image.Image.Format" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">poppler.cpp.image.format_enum</span></code></p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="poppler.image.Image.bytes_per_row">
+<em class="property">property </em><code class="sig-name descname">bytes_per_row</code><a class="headerlink" href="#poppler.image.Image.bytes_per_row" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="poppler.image.Image.const_data">
+<em class="property">property </em><code class="sig-name descname">const_data</code><a class="headerlink" href="#poppler.image.Image.const_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="poppler.image.Image.copy">
+<code class="sig-name descname">copy</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rect</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#poppler.image.Image.copy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="poppler.image.Image.data">
+<em class="property">property </em><code class="sig-name descname">data</code><a class="headerlink" href="#poppler.image.Image.data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="poppler.image.Image.format">
+<em class="property">property </em><code class="sig-name descname">format</code><a class="headerlink" href="#poppler.image.Image.format" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="poppler.image.Image.from_object">
+<em class="property">classmethod </em><code class="sig-name descname">from_object</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">poppler_object</span></em><span class="sig-paren">)</span><a class="headerlink" href="#poppler.image.Image.from_object" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="poppler.image.Image.height">
+<em class="property">property </em><code class="sig-name descname">height</code><a class="headerlink" href="#poppler.image.Image.height" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="poppler.image.Image.is_valid">
+<em class="property">property </em><code class="sig-name descname">is_valid</code><a class="headerlink" href="#poppler.image.Image.is_valid" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="poppler.image.Image.memoryview">
+<code class="sig-name descname">memoryview</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#poppler.image.Image.memoryview" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="poppler.image.Image.save">
+<code class="sig-name descname">save</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">file_name</span></em>, <em class="sig-param"><span class="n">out_format</span></em>, <em class="sig-param"><span class="n">dpi</span><span class="o">=</span><span class="default_value">- 1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#poppler.image.Image.save" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="poppler.image.Image.supported_image_formats">
+<em class="property">static </em><code class="sig-name descname">supported_image_formats</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#poppler.image.Image.supported_image_formats" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="poppler.image.Image.width">
+<em class="property">property </em><code class="sig-name descname">width</code><a class="headerlink" href="#poppler.image.Image.width" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">python-poppler</a></h1>
+
+
+
+<p class="blurb">Python binding to poppler-cpp library, to read and render PDF documents.</p>
+
+
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=cbrunet&repo=python-poppler&type=watch&count=true&size=large&v=2"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../usage.html">Using python-poppler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribution.html">Contributing</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">API Reference</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="poppler.html">poppler package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="poppler.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="poppler.destination.html">poppler.destination module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="poppler.document.html">poppler.document module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="poppler.embeddedfile.html">poppler.embeddedfile module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="poppler.font.html">poppler.font module</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">poppler.image module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="poppler.page.html">poppler.page module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="poppler.pagerenderer.html">poppler.pagerenderer module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="poppler.pagetransition.html">poppler.pagetransition module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="poppler.rectangle.html">poppler.rectangle module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="poppler.toc.html">poppler.toc module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="poppler.utilities.html">poppler.utilities module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+<hr />
+<ul>
+    
+    <li class="toctree-l1"><a href="https://github.com/cbrunet/python-poppler">GitHub</a></li>
+    
+    <li class="toctree-l1"><a href="https://github.com/cbrunet/python-poppler/issues">Issues tracker</a></li>
+    
+    <li class="toctree-l1"><a href="https://pypi.org/project/python-poppler/">PyPI</a></li>
+    
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">API Reference</a><ul>
+  <li><a href="poppler.html">poppler package</a><ul>
+      <li>Previous: <a href="poppler.font.html" title="previous chapter">poppler.font module</a></li>
+      <li>Next: <a href="poppler.page.html" title="next chapter">poppler.page module</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Charles Brunet.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/api/poppler.image.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
